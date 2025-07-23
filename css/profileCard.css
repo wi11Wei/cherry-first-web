@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'MyColorFonts';
+    src: url('../fonts/AirtravelerspersonaluseBdit-ow59x.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+.profile-card {
+    font-family: Arial, sans-serif;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.profile-card h1 {
+    font-family: 'MyColorFonts';
+}
+.profile-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.profile-card h1 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+.profile-card p {
+    margin: 5px 0;
+    color: pink;
+    /* color: coral; */
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 77%;
+}
+.profile-card .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+.profile-card .social-media a {
+    text-decoration: none;
+    color: #000;
+}
+.profile-card .social-media img {
+    width: 22px;
+    height: 22px;
+}

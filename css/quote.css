@@ -1,0 +1,49 @@
+@font-face {
+  font-family: '钉钉进步体';
+  src: url("../fonts/DingTalk-JinBuTi.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'AlimamaDaoLiTi';
+  src: url("../fonts/AlimamaDaoLiTi.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.quote-container {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 600px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.quote-container h1 {
+  font-family: 'AlimamaDaoLiTi';
+  color: black;
+  display: block;
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+.author {
+  font-family: '钉钉进步体';
+  font-size: 1em;
+  color: gray;
+}
+.button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+}
+.button:hover {
+  background-color: #0056b3;
+}

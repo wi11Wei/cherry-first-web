@@ -1,0 +1,121 @@
+<!--
+ *  ┌─────────────────────────────────────────────────────────────┐
+ *  │┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐│
+ *  ││Esc│!1 │@2 │#3 │$4 │%5 │^6 │&7 │*8 │(9 │)0 │_- │+= │|\ │`~ ││
+ *  │├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┤│
+ *  ││ Tab │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │{[ │}] │ BS  ││
+ *  │├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤│
+ *  ││ Ctrl │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│" '│ Enter  ││
+ *  │├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────┬───┤│
+ *  ││ Shift  │ Z │ X │ C │ V │ B │ N │ M │< ,│> .│? /│Shift │Fn ││
+ *  │└─────┬──┴┬──┴──┬┴───┴───┴───┴───┴───┴──┬┴───┴┬──┴┬─────┴───┘│
+ *  │      │Fn │ Alt │         Space         │ Alt │Win│   HHKB   │
+ *  │      └───┴─────┴───────────────────────┴─────┴───┘          │
+ *  └─────────────────────────────────────────────────────────────┘
+ * 
+ * @Author: Will
+ * @Date: 2024-11-27 14:57:00
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2024-12-03 15:17:56
+ * @FilePath: \front-end_test\index.html
+ * @Description: 
+ * 
+ * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved. 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="IE=edge" content="notranslate">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/profileCard.css">
+    <link rel="stylesheet" href="css/quote.css">
+    <script src="menu.js" type="text/javascript"></script>
+    <script src="button.js" type="text/javascript"></script>
+    <title>Will_test</title>
+    <style>
+        @font-face {
+            font-family: MyColorFonts;
+            src: url('fonts/AirtravelerspersonaluseBdit-ow59x.otf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Nabla_Regular';
+            src: url('fonts/Nabla_Regular.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .iconfont {
+            font-size: 20px;
+            src: url('icon/blogger.svg');
+        }
+    </style>
+</head>
+
+<body>
+    <!--这里写代码 -->
+    <div class="menu" id="menu" style="width: 259px; margin: 0 auto;"></div>
+    <a
+        style="color: hotpink; font-size: 28px; font-family: MyColorFonts; display: block; width: 670px; margin: 0 auto;">
+        hello, this is an example of my personal information card.(⩾⩌⩽)
+    </a>
+    <br />
+    <!-- <a href="demo01.html" style="display: block; margin:0 auto; text-align: center;">点击跳转demo01</a>  -->
+    <button type="button" class="btn btn-light btn-lg" id="informationButton" class="informationButton"
+        style="font-family: 'Nabla_Regular'; display: block; margin: 0 auto;">my information</button>
+    <div id="card" class="profile-card">
+        <img src="https://picx.zhimg.com/70/v2-890934b22f3ac8f92c233c0fe95e786e_1440w.avis?source=172ae18b&biz_tag=Post"
+            alt="个人头像">
+        <h1>Will</h1>
+        <p>工号: GE22128</p>
+        <p>部门: 工具方案服务项目组</p>
+        <p>邮箱: wei.xinlong@cxtc.com</p>
+        <p>电话: (+86)150-6093-3376</p>
+        <p>地址: 福建省厦门市同安区</p>
+        <div class="social-media">
+            <!-- target="_blank" 指定该链接在新标签页打开 -->
+            <a href="https://github.com/wi11Wei" target="_blank"><img src="icon/github.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/in/Xinlong Wei" target="_blank"><img src="icon/linkined-circle.svg"
+                    alt="linkined"></a>
+            <a href="https://notion-next-nine-nu-10.vercel.app/" target="_blank"><img src="icon/blog.svg"
+                    alt="blog"></a>
+            <a href="https://www.gesac.com.cn" target="_blank"><img src="icon/link.svg" alt="web"></a>
+        </div>
+    </div>
+    <div id="quote-container" class="quote-container">
+        <h1 class="quote" id="quote">点击按钮获取一言</h1>
+        <div class="author" id="author"></div>
+        <br>
+        <button class="button" onclick="getQuote()">获取一言</button>
+    </div>
+
+    <script>
+        async function getQuote() {
+            try {
+                const response = await fetch('https://v1.hitokoto.cn/');
+                const data = await response.json();
+                document.getElementById('quote').innerText = data.hitokoto;
+                document.getElementById('author').innerText = `—— ${data.from}`;
+            } catch (error) {
+                console.error('Error fetching quote:', error);
+                document.getElementById('quote').innerText = '获取一言失败，请稍后重试。';
+                document.getElementById('author').innerText = '';
+            }
+        }
+        window.onload = function () {
+            setInvMenu();
+            myInfo();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一言网 API 示例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .quote-container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .quote {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .author {
+            font-size: 1em;
+            color: gray;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote-container">
+        <div class="quote" id="quote">点击按钮获取一言</div>
+        <div class="author" id="author"></div>
+        <br>
+        <button class="button" onclick="getQuote()">获取一言</button>
+    </div>
+    <a href="index.html">回到主界面</a>
+
+    <script>
+        async function getQuote() {
+            try {
+                const response = await fetch('https://v1.hitokoto.cn/');
+                const data = await response.json();
+                document.getElementById('quote').innerText = data.hitokoto;
+                document.getElementById('author').innerText = `—— ${data.from}`;
+            } catch (error) {
+                console.error('Error fetching quote:', error);
+                document.getElementById('quote').innerText = '获取一言失败，请稍后重试。';
+                document.getElementById('author').innerText = '';
+            }
+        }
+    </script>
+</body>
+</html>
